@@ -1,6 +1,17 @@
 *{
     font-family: 'Lucida Console';
 }
+@media screen and (min-width: 601px) {
+    * {
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    * {
+      font-size: 10px;
+    }
+  }
+
 a{
     color:unset;
     text-decoration: none;
@@ -75,7 +86,7 @@ div.images img{
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 100%;
     max-width: 600px;
   }
   
