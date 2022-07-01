@@ -35,17 +35,17 @@
         </div>
         <div class="content">
             <div class="images">    
-                <img src="images/nadmiar.jpeg" width="200px">
+                <img id="myImg" src="images/nadmiar.jpeg" width="200px" onclick="getImageSrc(this)" >
                 <a class="song" href="https://soundcloud.com/wwwanoone/nadmiar">Nadmiar</a>
             </div>
 
             <div class="images">
-                <img src="images/blood_money.jpeg" width="200px">
+                <img id="myImg" src="images/blood_money.jpeg" width="200px" onclick="getImageSrc(this)" >
                 <a class="song" href="https://soundcloud.com/wwwanoone/blood-money">Blood Money</a>
             </div>
 
             <div class="images">
-                <img src="images/benchbitch.png" width="200px">
+                <img id="myImg" src="images/benchbitch.png" width="200px" onclick="getImageSrc(this)">
                 <a class="song" href="https://soundcloud.com/wwwanoone/miliony">Miliony</a>
             </div>
         </div>
@@ -54,7 +54,32 @@
 
     </div>
     
-    
+    <div id="myModal" class="modal">
+        <span class="close"></span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+      
+      <script>
+      // Get the modal
+      function getImageSrc(image){
+        var img = document.createElement("img");
+        var modalImg = document.getElementById("img01");
+        modalImg.src = image.src;
+        img.src = image.src;
+        modal.style.display = "block";
+      }
+       var modal = document.getElementById("myModal");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+        modal.style.display = "none";
+      }
+      </script>
+
 
 </body>
 </html> 
