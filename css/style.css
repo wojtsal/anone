@@ -6,11 +6,10 @@ a{
     text-decoration: none;
 }
 body {
-    background-color: white;
+    background-color: #f9faf0;
 }
 
-.menu{
-    background-color: white;  
+.menu{  
     padding-top: 15px;
     padding-bottom: 30px;  
 }
@@ -21,10 +20,6 @@ body {
   }
 #column1{  
     visibility: hidden;   
-}
-#column2{   
-}
-#column3{  
 }
 .menu:after {
     content: "";
